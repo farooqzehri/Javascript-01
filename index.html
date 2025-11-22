@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Objects Form</title>
+
+    <!-- High-End Inline CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+
+        body{
+            min-height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background:var(--bg);
+            transition:.4s ease;
+        }
+
+        :root{
+            --bg:linear-gradient(135deg,#0f172a,#1e293b);
+            --card-bg:rgba(255,255,255,0.07);
+            --text:#fff;
+            --input-bg:rgba(255,255,255,0.08);
+            --icon:#9bb0c9;
+        }
+        body.light{
+            --bg:linear-gradient(135deg,#e2e8f0,#f8fafc);
+            --card-bg:rgba(255,255,255,0.45);
+            --text:#0f172a;
+            --input-bg:rgba(255,255,255,0.85);
+            --icon:#475569;
+        }
+
+        /* Card */
+        .card{
+            width:100%;
+            max-width:480px;
+            padding:32px;
+            border-radius:22px;
+            background:var(--card-bg);
+            backdrop-filter:blur(18px);
+            border:1px solid rgba(255,255,255,0.15);
+            box-shadow:0 25px 45px rgba(0,0,0,0.45);
+            position:relative;
+            overflow:hidden;
+            animation:fadeUp .8s ease;
+        }
+        @keyframes fadeUp{
+            from{opacity:0;transform:translateY(40px);}
+            to{opacity:1;transform:translateY(0);}
+        }
+
+        /* glowing lines */
+        .card::before{
+            content:"";
+            position:absolute;
+            top:-40%;left:-30%;
+            width:200%;height:60%;
+            background:linear-gradient(90deg,#60a5fa33,#6ee7b733);
+            filter:blur(55px);
+            transform:rotate(-12deg);
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:25px;
+            color:var(--text);
+            font-weight:600;
+            letter-spacing:.5px;
+        }
+
+        /* Field wrapper */
+        .field{
+            position:relative;
+            margin-bottom:22px;
+        }
+
+        /* Input */
+        .input{
+            width:100%;
+            padding:16px 16px 16px 42px;
+            background:var(--input-bg);
+            border:1px solid rgba(255,255,255,0.18);
+            border-radius:14px;
+            font-size:15px;
+            color:var(--text);
+            transition:.25s ease;
+        }
+
+        .input:focus{
+            border-color:#60a5fa;
+            box-shadow:0 0 12px #60a5fa77;
+            outline:none;
+            transform:translateY(-2px);
+        }
+
+        .input::placeholder{
+            opacity:0;
+        }
+
+        /* Floating label */
+        .label{
+            position:absolute;
+            left:42px;
+            top:50%;
+            transform:translateY(-50%);
+            color:#94a3b8;
+            pointer-events:none;
+            transition:.25s ease;
+        }
+
+        .input:focus + .label,
+        .input:not(:placeholder-shown) + .label{
+            top:-8px;
+            left:10px;
+            font-size:12px;
+            color:#6ee7b7;
+            background:var(--card-bg);
+            padding:1px 6px;
+            border-radius:6px;
+        }
+
+        /* Icons */
+        .icon{
+            position:absolute;
+            top:50%;
+            left:14px;
+            transform:translateY(-50%);
+            font-size:18px;
+            color:var(--icon);
+        }
+
+        /* Button */
+        .btn{
+            width:100%;
+            padding:15px;
+            border:none;
+            border-radius:14px;
+            background:linear-gradient(135deg,#6ee7b7,#60a5fa);
+            color:#0f172a;
+            font-weight:600;
+            font-size:16px;
+            cursor:pointer;
+            transition:.25s;
+            box-shadow:0 12px 24px rgba(0,0,0,0.35);
+        }
+        .btn:hover{
+            transform:translateY(-3px);
+            box-shadow:0 18px 28px rgba(0,0,0,0.45);
+        }
+
+        /* Toggle button */
+        .toggle{
+            position:absolute;
+            top:20px;
+            right:20px;
+            padding:8px 14px;
+            border-radius:12px;
+            border:none;
+            background:#ffffff22;
+            color:var(--text);
+            cursor:pointer;
+            backdrop-filter:blur(8px);
+        }
+
+        /* Toast */
+        .toast{
+            position:fixed;
+            right:25px;
+            bottom:25px;
+            padding:16px 20px;
+            background:rgba(0,0,0,0.7);
+            color:white;
+            border-radius:12px;
+            font-size:14px;
+            opacity:0;
+            transform:translateY(20px);
+            transition:.4s ease;
+            pointer-events:none;
+        }
+        .toast.show{
+            opacity:1;
+            transform:translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <button class="toggle" onclick="toggleMode()">Toggle Mode</button>
+
+    <div class="card">
+        <h1>Premium Objects Form</h1>
+
+        <div class="field">
+            <span class="icon">👤</span>
+            <input id="text" class="input" placeholder=" " />
+            <label class="label">Full Name</label>
+        </div>
+
+        <div class="field">
+            <span class="icon">📧</span>
+            <input id="email" class="input" placeholder=" " />
+            <label class="label">Email</label>
+        </div>
+
+        <div class="field">
+            <span class="icon">🎂</span>
+            <input id="age" class="input" placeholder=" " />
+            <label class="label">Age</label>
+        </div>
+
+        <div class="field">
+            <span class="icon">📍</span>
+            <input id="city" class="input" placeholder=" " />
+            <label class="label">City</label>
+        </div>
+
+        <button class="btn" onclick="submit()">Submit</button>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast">Form submitted!</div>
+
+    <script src="app.js"></script>
+
+    <script>
+        /* Toast trigger after your JS runs */
+        const toast = document.getElementById("toast");
+        const originalSubmit = submit;
+
+        submit = function(){
+            originalSubmit();
+            toast.classList.add("show");
+            setTimeout(()=> toast.classList.remove("show"), 2500);
+        };
+
+        /* Light / Dark mode toggle */
+        function toggleMode(){
+            document.body.classList.toggle("light");
+        }
+    </script>
+</body>
+</html>
