@@ -232,6 +232,34 @@
 // }
 // console.log("the completed task=", count);
 
+// 11. Print the population of the city with the smallest
+// population.
+
+// const cities = [
+// { name: "Delhi", population: 19000000 },
+// { name: "Pune", population: 3100000 },
+// { name: "Jaipur", population: 4000000 },
+// { name: "Indore", population: 2200000 },
+// { name: "Nagpur", population: 2400000 },
+// { name: "Surat", population: 6000000 },
+// { name: "Kanpur", population: 3000000 },
+// { name: "Lucknow", population: 3500000 },
+
+// { name: "Patna", population: 2500000 },
+// { name: "Bhopal", population: 2000000 }
+// ];
+// const result = document.querySelector("#head")
+// let smallestPolpulation = cities[0].population;
+// for(let i = 0 ; i < cities.length; i++){
+// if(cities[i].population < smallestPolpulation){
+//     smallestPolpulation = cities[i].population
+// }
+// }
+// console.log(smallestPolpulation);
+// result.innerHTML += smallestPolpulation 
+
+
+
 
 
 
