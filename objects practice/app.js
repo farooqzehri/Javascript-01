@@ -161,26 +161,52 @@
 
 // 8. Create a new array of movies with rating > 8.
 
-const movies = [
-{ name: "Inception", rating: 9 },
-{ name: "Hero", rating: 6 },
-{ name: "Interstellar", rating: 8.5 },
-{ name: "Dune", rating: 8.2 },
-{ name: "Avatar", rating: 7 },
-{ name: "Joker", rating: 8.4 },
-{ name: "Gravity", rating: 7.8 },
+// const movies = [
+// { name: "Inception", rating: 9 },
+// { name: "Hero", rating: 6 },
+// { name: "Interstellar", rating: 8.5 },
+// { name: "Dune", rating: 8.2 },
+// { name: "Avatar", rating: 7 },
+// { name: "Joker", rating: 8.4 },
+// { name: "Gravity", rating: 7.8 },
 
-{ name: "Tenet", rating: 7.5 },
-{ name: "Soul", rating: 8.3 },
-{ name: "Wall-E", rating: 8.4 }
-];
-let array = [];
-for (let i = 0 ; i < movies.length ; i++){
-    if(movies[i].rating >= 8){
-        // console.log(movies[i].rating);
-    array.push(movies[i])
+// { name: "Tenet", rating: 7.5 },
+// { name: "Soul", rating: 8.3 },
+// { name: "Wall-E", rating: 8.4 }
+// ];
+// let array = [];
+// for (let i = 0 ; i < movies.length ; i++){
+//     if(movies[i].rating >= 8){
+//         // console.log(movies[i].rating);
+//     array.push(movies[i])
         
-    }
+//     }
 
-}
-console.log(array);
+// }
+// console.log(array);
+
+
+// 9. Calculate the average score of players.
+
+// const players = [
+// { name: "Rohit", score: 50 },
+// { name: "Virat", score: 80 },
+// { name: "Dhoni", score: 70 },
+// { name: "Hardik", score: 60 },
+// { name: "Gill", score: 55 },
+// { name: "Surya", score: 75 },
+// { name: "Iyer", score: 65 },
+// { name: "Pant", score: 58 },
+// { name: "Rahul", score: 72 },
+// { name: "Bumrah", score: 40 }
+// ];
+// let totalScore = 0;
+// for(let i = 0 ; i < players.length; i++){
+//     // console.log(players[i]);
+//     totalScore += players[i].score
+    
+// }
+// console.log("avarge score is ",totalScore / players.length); // the avarege score is 62.5
+
+
+
