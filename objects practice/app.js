@@ -111,22 +111,76 @@
 
 
 // 6. Find the order with the highest amount.
-const orders = [
-    { id: 1, amount: 1500 },
-    { id: 2, amount: 700 },
-    { id: 3, amount: 2300 },
-    { id: 4, amount: 5000 },
-    { id: 5, amount: 3400 },
-    { id: 6, amount: 280 },
-    { id: 7, amount: 1200 },
-    { id: 8, amount: 15000 },
-    { id: 9, amount: 2500 },
-    { id: 10, amount: 900 }
+
+// const orders = [
+//     { id: 1, amount: 1500 },
+//     { id: 2, amount: 700 },
+//     { id: 3, amount: 2300 },
+//     { id: 4, amount: 5000 },
+//     { id: 5, amount: 3400 },
+//     { id: 6, amount: 280 },
+//     { id: 7, amount: 1200 },
+//     { id: 8, amount: 15000 },
+//     { id: 9, amount: 2500 },
+//     { id: 10, amount: 900 }
+// ];
+// let highamount = orders[0];
+// for(let i = 0 ; i < orders.length; i++){
+//     if(orders[i].amount > highamount.amount){
+//  highamount = orders[i]
+//     }
+// }
+// console.log(highamount);
+
+
+
+
+// 7. Print car brands manufactured after 2015.
+// const result = document.querySelector("#result")
+// const cars = [
+// { brand: "BMW", year: 2018 },
+// { brand: "Toyota", year: 2012 },
+// { brand: "Audi", year: 2020 },
+// { brand: "Honda", year: 2016 },
+// { brand: "Ford", year: 2014 },
+// { brand: "Kia", year: 2019 },
+// { brand: "Tesla", year: 2021 },
+// { brand: "Hyundai", year: 2017 },
+// { brand: "Jeep", year: 2013 },
+// { brand: "Volvo", year: 2022 }
+// ];
+
+// for (let i = 0 ; i < cars.length; i++){
+//     if(cars[i].year >= 2015){
+//         console.log(cars[i].year);
+//         result.innerHTML += `<li>${cars[i].brand} -- ${cars[i].year}</li>`
+        
+//     }
+// }       working fine
+
+
+// 8. Create a new array of movies with rating > 8.
+
+const movies = [
+{ name: "Inception", rating: 9 },
+{ name: "Hero", rating: 6 },
+{ name: "Interstellar", rating: 8.5 },
+{ name: "Dune", rating: 8.2 },
+{ name: "Avatar", rating: 7 },
+{ name: "Joker", rating: 8.4 },
+{ name: "Gravity", rating: 7.8 },
+
+{ name: "Tenet", rating: 7.5 },
+{ name: "Soul", rating: 8.3 },
+{ name: "Wall-E", rating: 8.4 }
 ];
-let highamount = orders[0];
-for(let i = 0 ; i < orders.length; i++){
-    if(orders[i].amount > highamount.amount){
- highamount = orders[i]
+let array = [];
+for (let i = 0 ; i < movies.length ; i++){
+    if(movies[i].rating >= 8){
+        // console.log(movies[i].rating);
+    array.push(movies[i])
+        
     }
+
 }
-console.log(highamount);
+console.log(array);
