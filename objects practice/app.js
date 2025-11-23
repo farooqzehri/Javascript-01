@@ -210,3 +210,28 @@
 
 
 
+// 10. Count how many tasks are completed.
+// const tasks = [
+
+// { task: "Cleaning", completed: true },
+// { task: "Shopping", completed: false },
+// { task: "Coding", completed: true },
+// { task: "Reading", completed: true },
+// { task: "Gym", completed: false },
+// { task: "Cooking", completed: true },
+// { task: "Study", completed: false },
+// { task: "Laundry", completed: true },
+// { task: "Meditation", completed: false },
+// { task: "Running", completed: true }
+// ];
+// let count = 0
+// for(let i = 0 ; i < tasks.length ; i++){
+//     if(tasks[i].completed === true){
+//         count++;
+//     }
+// }
+// console.log("the completed task=", count);
+
+
+
+
