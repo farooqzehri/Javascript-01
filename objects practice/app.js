@@ -258,6 +258,30 @@
 // console.log(smallestPolpulation);
 // result.innerHTML += smallestPolpulation 
 
+// 12. Calculate the total inventory value (quantity × price).
+const items = [
+{ item: "Pen", quantity: 20, price: 10 },
+{ item: "Notebook", quantity: 5, price: 50 },
+{ item: "Bag", quantity: 2, price: 300 },
+{ item: "Bottle", quantity: 10, price: 40 },
+{ item: "Pencil", quantity: 30, price: 5 },
+{ item: "Marker", quantity: 15, price: 15 },
+{ item: "Eraser", quantity: 25, price: 3 },
+{ item: "Sharpener", quantity: 18, price: 6 },
+{ item: "Calculator", quantity: 4, price: 200 },
+{ item: "File", quantity: 12, price: 20 }
+];
+let result = 0;
+for(let i = 0 ; i < items.length; i++){
+  let sum =   items[i].quantity * items[i].price
+            result += sum;
+    // console.log(sum);
+
+
+    
+}
+console.log(result);   //   total is 3048  
+//      working fine
 
 
 
