@@ -259,30 +259,52 @@
 // result.innerHTML += smallestPolpulation 
 
 // 12. Calculate the total inventory value (quantity × price).
-const items = [
-{ item: "Pen", quantity: 20, price: 10 },
-{ item: "Notebook", quantity: 5, price: 50 },
-{ item: "Bag", quantity: 2, price: 300 },
-{ item: "Bottle", quantity: 10, price: 40 },
-{ item: "Pencil", quantity: 30, price: 5 },
-{ item: "Marker", quantity: 15, price: 15 },
-{ item: "Eraser", quantity: 25, price: 3 },
-{ item: "Sharpener", quantity: 18, price: 6 },
-{ item: "Calculator", quantity: 4, price: 200 },
-{ item: "File", quantity: 12, price: 20 }
-];
-let result = 0;
-for(let i = 0 ; i < items.length; i++){
-  let sum =   items[i].quantity * items[i].price
-            result += sum;
-    // console.log(sum);
+// const items = [
+// { item: "Pen", quantity: 20, price: 10 },
+// { item: "Notebook", quantity: 5, price: 50 },
+// { item: "Bag", quantity: 2, price: 300 },
+// { item: "Bottle", quantity: 10, price: 40 },
+// { item: "Pencil", quantity: 30, price: 5 },
+// { item: "Marker", quantity: 15, price: 15 },
+// { item: "Eraser", quantity: 25, price: 3 },
+// { item: "Sharpener", quantity: 18, price: 6 },
+// { item: "Calculator", quantity: 4, price: 200 },
+// { item: "File", quantity: 12, price: 20 }
+// ];
+// let result = 0;
+// for(let i = 0 ; i < items.length; i++){
+//   let sum =   items[i].quantity * items[i].price
+//             result += sum;
+//     // console.log(sum);
 
 
     
-}
-console.log(result);   //   total is 3048  
+// }
+// console.log(result);   //   total is 3048  
 //      working fine
 
+
+// 13. Print students aged between 18 and 25.
+// const studentsData = [
+// { name: "Arun", age: 17 },
+// { name: "Priya", age: 21 },
+// { name: "Neha", age: 25 },
+// { name: "Suresh", age: 19 },
+// { name: "Tara", age: 23 },
+// { name: "Kiran", age: 26 },
+// { name: "Nitin", age: 22 },
+// { name: "Monika", age: 24 },
+// { name: "Vivek", age: 18 },
+// { name: "Harsh", age: 27 }
+// ];
+// const studentslist = document.querySelector("#list")
+// for(let i = 0 ; i < studentsData.length ; i++){
+//     if(studentsData[i].age >= 18 && studentsData[i].age <= 25){
+//         console.log(studentsData[i]);
+//         studentslist.innerHTML += `<li>${studentsData[i].name +"---"+studentsData[i].age}</li>`
+//     }
+// }
+//   working clear
 
 
 
