@@ -309,3 +309,40 @@
 
 
 
+// 14. Create a new array of only "credit" transactions.
+// const transactions = [
+// { type: "credit", amount: 2000 },
+// { type: "debit", amount: 500 },
+// { type: "credit", amount: 1500 },
+// { type: "credit", amount: 4500 },
+// { type: "debit", amount: 800 },
+// { type: "credit", amount: 700 },
+// { type: "credit", amount: 3200 },
+// { type: "debit", amount: 400 },
+// { type: "credit", amount: 2500 },
+// { type: "debit", amount: 600 }
+// ];
+// let creditarray = [];
+// for (let i = 0 ; i < transactions.length; i++ ){
+//     if(transactions[i].type === "credit"){
+//         // console.log(transactions[i]);
+//         creditarray.push(transactions[i])
+//     }
+
+// }
+// console.log(creditarray);
+
+
+// 15. Find the course with the longest name.
+const courses = [
+{ title: "Math" },
+{ title: "Computer Science" },
+{ title: "Web Development" },
+{ title: "Electrical Engineering" },
+{ title: "Data Structures" },
+{ title: "Artificial Intelligence" },
+{ title: "Machine Learning" },
+{ title: "Cloud Computing" },
+{ title: "Cyber Security" },
+{ title: "Human Computer Interaction" }
+];
