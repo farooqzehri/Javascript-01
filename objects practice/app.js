@@ -334,28 +334,29 @@
 
 
 // 15. Find the course with the longest name.
-const courses = [
-{ title: "Math" },
-{ title: "Computer Science" },
-{ title: "Web Development" },
-{ title: "Electrical Engineering" },
-{ title: "Data Structures" },
-{ title: "Artificial Intelligence" },
-{ title: "Machine Learning" },
-{ title: "Cloud Computing" },
-{ title: "Cyber Security" },
-{ title: "Human Computer Interaction" }
-];
-let bigesttitle = 0;
-let index = 0;
-for(let i = 0 ; i < courses.length; i++){
-// console.log(courses[i].title.length);
-if(bigesttitle < courses[i].title.length){
-    bigesttitle = courses[i].title.length
-    index = i
-}
+// const courses = [
+// { title: "Math" },
+// { title: "Computer Science" },
+// { title: "Web Development" },
+// { title: "Electrical Engineering" },
+// { title: "Data Structures" },
+// { title: "Artificial Intelligence" },
+// { title: "Machine Learning" },
+// { title: "Cloud Computing" },
+// { title: "Cyber Security" },
+// { title: "Human Computer Interaction" }
+// ];
+// let bigesttitle = 0;
+// let index = 0;
+// for(let i = 0 ; i < courses.length; i++){
+// // console.log(courses[i].title.length);
+// if(bigesttitle < courses[i].title.length){
+//     bigesttitle = courses[i].title.length
+//     index = i
+// }
 
 
-}
-// console.log(bigesttitle);
-console.log(courses[index])
+// }
+// // console.log(bigesttitle);
+// console.log(courses[index])
+
