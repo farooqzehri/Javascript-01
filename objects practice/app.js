@@ -446,7 +446,6 @@
 
 
 
-
 // Chat gpt questions 
 
 
@@ -1032,3 +1031,125 @@
     
 // }
 // para.innerHTML = `Best IT Employee: ${richemploy.name} -- ${richemploy.salary}`
+
+
+
+
+// const employees = [
+//   { name: "Ali", experience: 2, department: "HR" },
+//   { name: "Sara", experience: 5, department: "IT" },
+//   { name: "Umar", experience: 7, department: "Finance" },
+//   { name: "Hina", experience: 3, department: "IT" },
+//   { name: "Zain", experience: 6, department: "IT" },
+//   { name: "Fahad", experience: 4, department: "HR" }
+// ];
+// const expert = document.querySelector("#expert");
+
+// let best = null;
+
+// for(let i = 0 ; i < employees.length ; i++) {
+
+// if(employees[i].department === "IT") {
+
+//     if(best === null){
+//         best = employees[i];
+//     }
+//     else if (employees[i].experience > best.experience){
+//         best = employees[i]
+//     }
+
+//  }
+
+// }
+// expert.innerHTML = `Most Experienced Engineer: ${best.name}  -- ${best.experience}`
+
+ 
+// // 🎯 Your Goal:
+
+// // Sirf IT department walon ko check karo
+
+// // Un me se jiska experience sabse zyada ho, usko find karo
+
+// // Naam + Experience DOM me show karo
+
+// // Example output:
+// // Most Experienced Engineer: Zain — 6 years
+
+// // 🔥 Hint (agar atak jao):
+
+// // Pehle let best = null karo
+
+// // Loop chalao
+
+// // Condition lagao:
+// // if (employee.department === "IT")
+
+// // Fir max experience find karo
+
+// // End me DOM update karo
+
+
+
+
+// const workers = [
+//   { name: "Ali", projects: 5, fullTime: true, department: "HR" },
+//   { name: "Sara", projects: 12, fullTime: true, department: "Marketing" },
+//   { name: "Umar", projects: 7, fullTime: false, department: "Marketing" },
+//   { name: "Hina", projects: 15, fullTime: true, department: "IT" },
+//   { name: "Zain", projects: 9, fullTime: true, department: "Marketing" },
+//   { name: "Tina", projects: 8, fullTime: false, department: "HR" }
+// ];
+
+const output = document.querySelector("#top-marketing");
+
+//  let best = null;
+
+
+// for(let i = 0 ; i < workers.length ; i++){
+//     if(workers[i].department === "Marketing" && workers[i].fullTime){
+       
+
+//        if(best === null){
+//         best = workers[i]
+//        }else if ( workers[i].projects > best.projects )  {
+//         best = workers[i]
+//        }
+       
+
+//     }
+
+
+// }
+// console.log(best);
+// output.innerHTML = `Top Marketing employ is: ${best.name} -- ${best.projects} projects`
+
+
+
+
+
+const workers = [
+  { name: "Ali", yearsWorked: 3, fullTime: true, department: "HR" },
+  { name: "Sara", yearsWorked: 6, fullTime: true, department: "IT" },
+  { name: "Umar", yearsWorked: 4, fullTime: false, department: "IT" },
+  { name: "Hina", yearsWorked: 8, fullTime: true, department: "IT" },
+  { name: "Raza", yearsWorked: 2, fullTime: true, department: "Finance" },
+  { name: "Tina", yearsWorked: 7, fullTime: true, department: "IT" }
+];
+let best = null;
+
+for(let i = 0 ; i < workers.length ; i++) {
+
+    if(workers[i].department === "IT" && workers[i].fullTime) {
+
+        if(best === null){
+            best = workers[i]
+        } else if ( workers[i].yearsWorked > best.yearsWorked){
+            best  = workers[i]
+        }
+        
+
+    }
+
+}
+        console.log(best);
+        output.innerHTML = `Best IT Employee: ${best.name} -- ${best.yearsWorked}`
