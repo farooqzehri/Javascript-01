@@ -1127,29 +1127,54 @@ const output = document.querySelector("#top-marketing");
 
 
 
-const workers = [
-  { name: "Ali", yearsWorked: 3, fullTime: true, department: "HR" },
-  { name: "Sara", yearsWorked: 6, fullTime: true, department: "IT" },
-  { name: "Umar", yearsWorked: 4, fullTime: false, department: "IT" },
-  { name: "Hina", yearsWorked: 8, fullTime: true, department: "IT" },
-  { name: "Raza", yearsWorked: 2, fullTime: true, department: "Finance" },
-  { name: "Tina", yearsWorked: 7, fullTime: true, department: "IT" }
-];
-let best = null;
+// const workers = [
+//   { name: "Ali", yearsWorked: 3, fullTime: true, department: "HR" },
+//   { name: "Sara", yearsWorked: 6, fullTime: true, department: "IT" },
+//   { name: "Umar", yearsWorked: 4, fullTime: false, department: "IT" },
+//   { name: "Hina", yearsWorked: 8, fullTime: true, department: "IT" },
+//   { name: "Raza", yearsWorked: 2, fullTime: true, department: "Finance" },
+//   { name: "Tina", yearsWorked: 7, fullTime: true, department: "IT" }
+// ];
+// let best = null;
 
-for(let i = 0 ; i < workers.length ; i++) {
+// for(let i = 0 ; i < workers.length ; i++) {
 
-    if(workers[i].department === "IT" && workers[i].fullTime) {
+//     if(workers[i].department === "IT" && workers[i].fullTime) {
 
-        if(best === null){
-            best = workers[i]
-        } else if ( workers[i].yearsWorked > best.yearsWorked){
-            best  = workers[i]
-        }
+//         if(best === null){
+//             best = workers[i]
+//         } else if ( workers[i].yearsWorked > best.yearsWorked){
+//             best  = workers[i]
+//         }
         
 
-    }
+//     }
 
+// }
+//         console.log(best);
+//         output.innerHTML = `Best IT Employee: ${best.name} -- ${best.yearsWorked}`
+
+
+
+
+
+const workers = [
+    { name: "Ali", salary: 50000, fullTime: true, department: "IT" },
+    { name: "Sara", salary: 75000, fullTime: false, department: "Finance" },
+    { name: "Umar", salary: 90000, fullTime: true, department: "IT" },
+    { name: "Hina", salary: 65000, fullTime: true, department: "HR" },
+    { name: "Zain", salary: 85000, fullTime: true, department: "IT" },
+];
+let best = null;
+for(let i = 0 ; i < workers.length ; i++){
+    if(workers[i].fullTime && workers[i].department === "IT") {
+        // console.log(workers[i]);
+        if(best === null){
+            best = workers[i]
+        } else if ( workers[i].salary > best.salary){
+            best = workers[i]
+        }
+        
+    }
 }
-        console.log(best);
-        output.innerHTML = `Best IT Employee: ${best.name} -- ${best.yearsWorked}`
+output.innerHTML = `Best IT Employee is: ${best.name} -- ${best.salary}`
