@@ -1,4 +1,4 @@
-// // 1. Print only the names of all students.
+// 1. Print only the names of all students.
 
 // const names = document.querySelector("#names")
 // const students = [
@@ -360,3 +360,675 @@
 // // console.log(bigesttitle);
 // console.log(courses[index])
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Chat gpt questions 
+
+
+
+
+// 1. Sirf un employees ko print karo jin ki salary 50,000 se zyada ho.
+// const result = document.querySelector("#result")
+// const employees = [
+//   { name: "Ali", salary: 40000 },
+//   { name: "Ahmed", salary: 52000 },
+//   { name: "Sara", salary: 75000 },
+//   { name: "Uzair", salary: 30000 },
+//   { name: "Rida", salary: 90000 }
+// ];
+// for(let i = 0 ; i < employees.length; i++){
+//     if(employees[i].salary > 50000){
+//         console.log(employees[i]);
+        
+//     }
+// }
+
+
+
+
+// 2. Ek array me numbers diye hain. Unka total sum print karo.
+// const nums = [20, 50, 10, 40, 70];
+// let sum = 0;
+// for(let i = 0 ; i < nums.length; i++){
+//     sum += nums[i]
+   
+    
+// }
+// console.log("total is " , sum);
+
+
+
+// 1. Ek array diya hai. Us me se even numbers print karo.
+
+// let numbers = [12, 5, 8, 21, 44, 9, 30];
+
+// for(let i = 0 ; i < numbers.length ; i++){
+//     if(numbers[i] %2 === 0){
+//         console.log(numbers[i]);
+        
+//     }
+// }  // working fine
+
+
+
+
+// 3. Students ke marks diya hain. Jis student ke marks 80 se zyada hain unhe print karo.
+// let students = [
+//  {name: 'Ali', marks: 75},
+//  {name: 'Sara', marks: 85},
+//  {name: 'Umar', marks: 90},
+//  {name: 'Tina', marks: 60}
+// ]
+// for(let i = 0 ; i < students.length ; i++){
+//     if(students[i].marks >= 80){
+//         console.log(students[i]);
+        
+//     }
+// }   // working code
+
+
+
+// let orders = [
+//  {orderId: 1, status: "delivered"},
+//  {orderId: 2, status: "pending"},
+//  {orderId: 3, status: "delivered"} ,
+//  {orderId: 4, status: "delivered"},
+//  {orderId: 5, status: "pending"},
+//  {orderId: 6, status: "delivered"} ,
+//  {orderId: 7, status: "delivered"},
+//  {orderId: 8, status: "pending"},
+//  {orderId: 9, status: "delivered"} ,
+//  {orderId: 10, status: "delivered"},
+//  {orderId: 11, status: "pending"},
+//  {orderId: 12, status: "delivered"},
+// ]
+// for(let i = 0 ; i < orders.length ; i++){
+//     if(orders[i].status === "delivered"){
+//         console.log(orders[i]);
+        
+//     }
+// }
+
+// let items = [
+//  {item: 'Pen', price: 10, qty: 5},
+//  {item: 'Book', price: 50, qty: 2}
+// ]
+// let result =0;
+// for(let i = 0 ; i  < items.length ; i++ ){
+//   let q =  items[i].price * items[i].qty
+// //   let y = items[i].price + items[i].price
+//        result += q
+    
+// }
+//     console.log(result);  // result is 150
+
+
+
+// Ek array me fruits hain. “Apple” kitni dafa aya hai count karo.
+
+// let fruits = ["Apple", "Banana", "Apple", "Grapes", "Apple"]
+// for(let i = 0 ; i < fruits.length ; i++){
+//   let f=  fruits[i].replace("Apple" , "seb")
+//     console.log(f);
+    
+// }                  samaj nai araaha
+
+
+// let players=[
+//  {name: "Rohit", score: 70},
+//  {name: "Virat", score: 82},
+//  {name: "Dhoni", score: 65}
+// ]   
+// let highestscorer = players[0]
+// for(let i = 0 ; i < players.length ; i++){
+//     if(players[i].score >= highestscorer.score){
+//         // console.log(players[i]);
+//         highestscorer =   players[i]
+//     }
+// }
+// console.log(highestscorer);   highest scorer is virat kohli
+
+
+
+
+// 8. Products me se un products ko naya array me store karo jinki price > 1000 hai.
+//   let items = [
+//    {name: 'Mouse', price: 500},
+//  {name: 'Keyboard', price: 1500},
+//  {name: 'Speaker', price: 800},
+//  {name: 'Monitor', price: 12000}
+// ]
+// const highprice = []
+// for(let i = 0 ; i < items.length ; i++){
+//     if( items[i].price >= 1000){
+//         console.log(items[i].price , items[i].name);
+//         highprice.push(items[i].name,items[i].price)
+        
+        
+//     }
+// }
+// console.log(highprice);
+
+
+// 6. Employees ke salaries ka total calculate karo. 
+//  let employes = [
+//  {name: "A", salary: 30000},
+//  {name: "B", salary: 35000},
+//  {name: "C", salary: 25000}
+// ]
+// let result = 0;
+// for(let i = 0 ; i < employes.length; i++ ){
+//     let k =  result += employes[i].salary ; 
+// }
+// console.log(result);  // 90000
+
+
+// 4. Temperature array me se maximum temperature find karo.
+
+// let temperature = [32, 45, 29, 50, 41, 48]
+// let  hightemprature = temperature[0];
+// for(let i = 0 ; i < temperature.length ; i++){
+//     if(temperature[i] > hightemprature){
+//        hightemprature = temperature[i]}
+     
+// }
+
+//      console.log(hightemprature);
+
+//     find old people
+// let people = [
+//   { name: "Ali", age: 22 },
+//   { name: "Sara", age: 19 },
+//   { name: "Umar", age: 30 },
+//   { name: "Tina", age: 25 },
+//   { name: "Raza", age: 28 }
+// ];
+// let oldname = people[0];
+
+// for(let i = 0 ; i < people.length ; i++){
+//     if(
+//         people[i].age > oldname.age
+//     ){
+//             oldname = people[i]
+//     }
+// }
+// console.log(oldname);
+
+    
+
+
+// which student got high score
+// let students = [
+//   { name: "Farooq", marks: 75 },
+//   { name: "Ali", marks: 92 },
+//   { name: "Hira", marks: 88 },
+//   { name: "Zain", marks: 60 },
+//   { name: "Saad", marks: 95 }
+// ];
+// let scorer = students[0];
+// for(let i = 0 ; i < students.length ; i++){
+//     if(students[i].marks > scorer.marks){
+//         scorer = students[i]
+//     }
+// }
+// console.log(scorer);
+
+// let products = [
+//   { name: "Laptop", price: 90000 },
+//   { name: "Mouse", price: 1500 },
+//   { name: "Keyboard", price: 2500 },
+//   { name: "Monitor", price: 22000 },
+//   { name: "USB", price: 800 }
+// ];
+
+// let minimumprice = products[0];
+// for(let i = 0 ; i < products.length ; i++){
+//     if(products[i].price  < minimumprice.price){
+//         minimumprice = products[i]
+//     }
+// }
+// console.log(minimumprice);
+
+// find highest grade student
+
+// let students = [
+//   { name: "Ali", grade: 88 },
+//   { name: "Hina", grade: 92 },
+//   { name: "Raza", grade: 75 },
+//   { name: "Nimra", grade: 95 },
+//   { name: "Sajid", grade: 89 }
+// ];
+// let topper = students[0];
+// for(let i = 0 ; i < students.length ; i++){
+//     if(students[i].grade > topper.grade){
+//         topper = students[i]
+//     }
+// }
+// console.log(topper);
+ 
+
+
+// **Q: Employees ka array diya gaya hai. Sab se zyada salary wale employee ko print karo, lekin sirf un employees me se jo full-time hain.
+
+// let employees = [
+//   { name: "Ali", salary: 50000, fullTime: true },
+//   { name: "Sara", salary: 60000, fullTime: false },
+//   { name: "Umar", salary: 70000, fullTime: true },
+//   { name: "Hina", salary: 55000, fullTime: true },
+//   { name: "Zain", salary: 65000, fullTime: false }
+// ];
+// let topemploy = employees[0];
+// for(let i = 0 ; i < employees.length ; i++){
+//     if(employees[i].salary > topemploy.salary && employees[i].fullTime == true){
+//         topemploy = employees[i]
+//     }
+// }
+// console.log(topemploy);
+
+
+// Yahan se code likho...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //      PRACTICE 
+
+
+
+// const head = document.querySelector("#heading");
+// head.innerHTML = "Hello JavaScript"
+
+
+
+// const para = document.querySelector("#message");
+// let age = 18;
+// if(age >= 18){
+//     para.innerHTML = "You are an adult"
+// }else{
+//     para.innerHTML = "You are a minor"
+// }
+
+
+
+
+// const fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+// for(let i = 0 ; i < fruits.length ; i++){
+//     console.log(fruits[i]);
+    
+// }
+
+
+
+
+
+// const students = [
+//   { name: "Ali", marks: 75 },
+//   { name: "Sara", marks: 85 },
+//   { name: "Umar", marks: 90 }
+// ];
+// for(let i = 0 ; i < students.length ; i++){
+//     console.log(`${students[i].name} -- ${students[i].marks}` );
+    
+// }
+
+
+// const numbers = [10, 15, 20, 25, 30, 33];
+// for(let i = 0 ; i < numbers.length ; i++ ){
+//     if(numbers[i] % 2 !== 0 ){
+//         console.log(numbers[i]);
+        
+//     }
+// }
+
+
+
+
+
+
+// const students = [
+//   { name: "Ali", marks: 75 },
+//   { name: "Sara", marks: 45 },
+//   { name: "Umar", marks: 90 },
+//   { name: "Hina", marks: 30 },
+//   { name: "Raza", marks: 60 }
+// ];
+
+// for(let i = 0 ; i < students.length ; i++){
+//     if(students[i].marks >= 50){
+//         console.log(students[i].name, '--' , students[i].marks);
+        
+//     }
+// }
+
+
+
+// const students = [
+//   { name: "Ali", marks: 75 },
+//   { name: "Sara", marks: 45 },
+//   { name: "Umar", marks: 90 },
+//   { name: "Hina", marks: 30 },
+//   { name: "Raza", marks: 60 }
+// ];
+
+// const list = document.querySelector("#passed-students");
+
+// // Yahan se code likho
+// for(let i = 0 ; i < students.length ; i++){
+//     if(students[i].marks >= 50){
+//         list.innerHTML += `<li>${students[i].name} -- ${students[i].marks}</li>`
+//     }
+// }
+
+
+// const students = [
+//   { name: "Ali", marks: 75 },
+//   { name: "Sara", marks: 85 },
+//   { name: "Umar", marks: 90 },
+//   { name: "Hina", marks: 65 },
+//   { name: "Raza", marks: 95 }
+// ]
+// let topper = students[0]
+// for(let i = 0 ;  i < students.length ; i++){
+//     if( students[i].marks > topper.marks){
+//         topper = students[i]
+//     }
+// }
+// console.log(topper);
+
+
+// const employees = [
+//   { name: "Ali", salary: 50000, fullTime: true },
+//   { name: "Sara", salary: 60000, fullTime: false },
+//   { name: "Umar", salary: 70000, fullTime: true },
+//   { name: "Hina", salary: 55000, fullTime: true },
+//   { name: "Zain", salary: 65000, fullTime: false }
+// ];
+// let bestEmploy = employees[0];
+// for(let i = 0 ; i < employees.length ; i++){
+//     if(employees[i].salary >= 60000 && employees[i].fullTime === true){
+//         console.log(`${employees[i].name} -- ${employees[i].salary}`);
+        
+
+//     }
+// }
+
+
+
+
+
+// const employees = [
+//   { name: "Ali", salary: 50000, fullTime: true },
+//   { name: "Sara", salary: 60000, fullTime: false },
+//   { name: "Umar", salary: 70000, fullTime: true },
+//   { name: "Hina", salary: 55000, fullTime: true },
+//   { name: "Zain", salary: 65000, fullTime: false }
+// ];
+// let total = 0
+// for(let i = 0 ; i < employees.length ; i++){
+//     if(employees[i].fullTime === true ){
+//     let sum =    employees[i].salary 
+//     total += sum
+        
+//     }
+// }
+// console.log(total);
+
+
+
+// Q11: Show Full-Time Employees with Salary > 60000 in HTML List
+// const employees = [
+//   { name: "Ali", salary: 50000, fullTime: true },
+//   { name: "Sara", salary: 60000, fullTime: false },
+//   { name: "Umar", salary: 70000, fullTime: true },
+//   { name: "Hina", salary: 55000, fullTime: true },
+//   { name: "Zain", salary: 65000, fullTime: false }
+// ];
+
+// const list = document.querySelector("#employee-list");
+
+// // Yahan se code likho
+// for(let i = 0 ; i < employees.length ; i++){
+//     if(employees[i].salary >= 60000 && employees[i].fullTime == true){
+//         list.innerHTML += `<li>${employees[i].name} -- ${employees[i].salary}    `
+//     }
+//     console.log(employees[i]);
+    
+// }
+
+
+
+
+
+
+
+
+
+// const employees = [
+//   { name: "Ali", salary: 50000, fullTime: true },
+//   { name: "Sara", salary: 60000, fullTime: false },
+//   { name: "Umar", salary: 70000, fullTime: true },
+//   { name: "Hina", salary: 55000, fullTime: true },
+//   { name: "Zain", salary: 65000, fullTime: false }
+// ];
+
+// const topper = document.querySelector("#top-employee");
+// let rich = employees[0]
+// for(let i = 0 ; i < employees.length ; i++){
+//     if(employees[i].fullTime == true && employees[i].salary > rich.salary){
+//         // console.log(employees[i]);
+//         rich = employees[i]
+//         topper.innerHTML = `${employees[i].name} -- ${employees[i].salary}`
+//     }
+// }           //          fine
+
+
+
+// const employees = [
+//   { name: "Ali", salary: 50000, fullTime: true, yearsWorked: 3 },
+//   { name: "Sara", salary: 60000, fullTime: false, yearsWorked: 5 },
+//   { name: "Umar", salary: 70000, fullTime: true, yearsWorked: 6 },
+//   { name: "Hina", salary: 55000, fullTime: true, yearsWorked: 2 },
+//   { name: "Zain", salary: 65000, fullTime: false, yearsWorked: 4 }
+// ];
+// let bounus = null ;
+// const list = document.querySelector("#bonus-list");
+// for(let i = 0 ; i < employees.length ; i++){
+//     if(employees[i].fullTime === true && employees[i].yearsWorked >= 5){
+//         list.innerHTML += `<li>${employees[i].name} --- ${employees[i].salary}</li>`
+        
+//     }
+// }
+// for(let i = 0 ; i < employees.length ; i++ ){
+//     if(employees[i].salary)
+// }
+
+// Task:
+// 1. Sirf full-time employees consider karo
+// 2. Jo employees 5 saal se zyada kaam kar rahe hain, unko bonus eligible consider karo
+// 3. HTML me unka name + salary show karo as <li>
+
+
+
+
+// const employees = [
+//   { name: "Ali", salary: 50000, fullTime: true, yearsWorked: 3 },
+//   { name: "Sara", salary: 60000, fullTime: false, yearsWorked: 5 },
+//   { name: "Umar", salary: 70000, fullTime: true, yearsWorked: 6 },
+//   { name: "Hina", salary: 55000, fullTime: true, yearsWorked: 7 },
+//   { name: "Zain", salary: 65000, fullTime: false, yearsWorked: 4 }
+// ];
+
+// const topBonus = document.querySelector("#top-bonus");
+
+// Task:
+// 1. Sirf full-time employees consider karo
+// 2. Sirf wo employees jinka yearsWorked >= 5 ho
+// 3. Unme se highest salary wala employee find karo
+// 4. HTML me show karo: "Top Bonus Employee: Name - Salary"
+// let bounus = null
+// for(let i = 0 ; i < employees.length ; i++){
+//     if(employees[i].fullTime && employees[i].yearsWorked >= 5){
+//          bounus = employees[i];
+//          break
+       
+        
+//     }
+// }
+// for(let i = 0 ; i < employees.length ; i++){
+//     if(employees[i].fullTime && employees[i].salary > bounus.salary){
+//         bounus = employees[i]
+    
+
+//     }
+    
+//         topBonus.innerHTML = `Top Bonus employ is: ${bounus.name} - ${bounus.salary} `
+
+// }
+    // console.log(bounus.salary);
+
+
+//     const employees = [
+//   { name: "Ali", salary: 50000, fullTime: true, yearsWorked: 3, department: "HR" },
+//   { name: "Sara", salary: 60000, fullTime: false, yearsWorked: 5, department: "Finance" },
+//   { name: "Umar", salary: 70000, fullTime: true, yearsWorked: 6, department: "HR" },
+//   { name: "Hina", salary: 55000, fullTime: true, yearsWorked: 2, department: "IT" },
+//   { name: "Zain", salary: 65000, fullTime: false, yearsWorked: 4, department: "Finance" },
+//   { name: "Tina", salary: 80000, fullTime: true, yearsWorked: 7, department: "IT" }
+// ];
+// const para = document.querySelector("#best-it")
+
+// let richemploy = null
+// for(let i = 0 ; i < employees.length ; i++){
+//     if(employees[i].fullTime && employees[i].yearsWorked >= 5 && employees[i].department == "IT"){
+//         console.log(employees[i]);
+//         if(richemploy === null){
+//             richemploy = employees[i]
+//         }else if (employees[i].salary > richemploy.salary){
+//             richemploy = employees[i]
+//         }
+
+//     }
+    
+// }
+// para.innerHTML = `Best IT Employee: ${richemploy.name} -- ${richemploy.salary}`
