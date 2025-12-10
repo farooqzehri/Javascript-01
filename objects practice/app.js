@@ -1100,7 +1100,7 @@
 //   { name: "Tina", projects: 8, fullTime: false, department: "HR" }
 // ];
 
-const output = document.querySelector("#top-marketing");
+// const output = document.querySelector("#top-marketing");
 
 //  let best = null;
 
@@ -1158,23 +1158,160 @@ const output = document.querySelector("#top-marketing");
 
 
 
-const workers = [
-    { name: "Ali", salary: 50000, fullTime: true, department: "IT" },
-    { name: "Sara", salary: 75000, fullTime: false, department: "Finance" },
-    { name: "Umar", salary: 90000, fullTime: true, department: "IT" },
-    { name: "Hina", salary: 65000, fullTime: true, department: "HR" },
-    { name: "Zain", salary: 85000, fullTime: true, department: "IT" },
-];
-let best = null;
-for(let i = 0 ; i < workers.length ; i++){
-    if(workers[i].fullTime && workers[i].department === "IT") {
-        // console.log(workers[i]);
-        if(best === null){
-            best = workers[i]
-        } else if ( workers[i].salary > best.salary){
-            best = workers[i]
-        }
+// const workers = [
+//     { name: "Ali", salary: 50000, fullTime: true, department: "IT" },
+//     { name: "Sara", salary: 75000, fullTime: false, department: "Finance" },
+//     { name: "Umar", salary: 90000, fullTime: true, department: "IT" },
+//     { name: "Hina", salary: 65000, fullTime: true, department: "HR" },
+//     { name: "Zain", salary: 85000, fullTime: true, department: "IT" },
+// ];
+// let best = null;
+// for(let i = 0 ; i < workers.length ; i++){
+//     if(workers[i].fullTime && workers[i].department === "IT") {
+//         // console.log(workers[i]);
+//         if(best === null){
+//             best = workers[i]
+//         } else if ( workers[i].salary > best.salary){
+//             best = workers[i]
+//         }
         
+//     }
+// }
+// output.innerHTML = `Best IT Employee is: ${best.name} -- ${best.salary}`
+
+
+
+
+
+// const students = [
+//   { name: "Ali", marks: 78, attendance: 85, section: "A" },
+//   { name: "Sara", marks: 92, attendance: 90, section: "B" },
+//   { name: "Umar", marks: 88, attendance: 80, section: "A" },
+//   { name: "Hina", marks: 95, attendance: 82, section: "A" },
+//   { name: "Raza", marks: 70, attendance: 60, section: "A" }
+// ];
+// const output = document.querySelector("#output")
+// let topper = null;
+// for(let i = 0 ; i < students.length ; i++){
+//     if(students[i].section == "A" && students[i].attendance >= 80){
+//       // console.log(students[i]);
+//       if(topper === null){
+//         topper = students[i]
+//       }else if (
+//         students[i].marks > topper.marks
+//       ){
+//         topper = students[i]
+//       }
+    
+      
+//     }
+// }
+// console.log(topper);
+// output.innerHTML = `Top performer (Section A): ${topper.name} -- ${topper.marks}`
+
+
+
+
+
+
+
+
+
+
+// const employees = [
+//   { name: "Ali", experience: 2, performance: 85, department: "IT" },
+//   { name: "Sara", experience: 5, performance: 90, department: "HR" },
+//   { name: "Umar", experience: 4, performance: 92, department: "IT" },
+//   { name: "Hina", experience: 3, performance: 88, department: "Finance" },
+//   { name: "Zain", experience: 6, performance: 95, department: "IT" }
+// ];
+
+// const output = document.querySelector("#result");
+// let best = null ; 
+// for(let i = 0 ; i < employees.length ; i++){
+//   if(employees[i].department === "IT" && employees[i].experience >= 3){
+//     if(best == null){
+//        best = employees[i]
+//     }else if (employees[i].performance > best.performance){
+//      best = employees[i]
+//     }
+    
+    
+//   }
+// }
+// console.log(best);
+// output.innerHTML = `Best IT Employee is: ${best.name} - ${best.performance}`
+
+
+
+// const staff = [
+//   { name: "Ali", hours: 160, department: "HR" },
+//   { name: "Sara", hours: 175, department: "Sales" },
+//   { name: "Umar", hours: 190, department: "Sales" },
+//   { name: "Hina", hours: 120, department: "IT" },
+//   { name: "Zain", hours: 200, department: "Sales" }
+// ];
+
+// const result = document.querySelector("#output");
+
+// let best = null;
+//  for(let i = 0 ; i < staff.length ; i++){
+//   if(staff[i].department === "Sales"){
+//     if(best === null){
+//       best = staff[i]
+//     } else if (staff[i].hours > best.hours){
+//       best = staff[i]
+//     }
+//   }
+//  }
+//  console.log(best);
+//  result.innerHTML = `Top sales person is: ${best.name} - ${best.hours}`
+ 
+
+
+// const teachers = [
+//   { name: "Aisha", rating: 4.2, subject: "English" },
+//   { name: "Kamran", rating: 4.8, subject: "Maths" },
+//   { name: "Sana", rating: 4.5, subject: "Science" },
+//   { name: "Bilal", rating: 4.9, subject: "Maths" },
+//   { name: "Hira", rating: 4.1, subject: "Computer" }
+// ];
+// const output = document.querySelector("#output")
+// let best = null;
+// for(let i = 0 ; i < teachers.length ; i++){
+//   if(teachers[i].subject === "Maths"){
+//     if(best === null){
+//       best = teachers[i]
+//       // console.log(teachers[i])
+//     } else if (teachers[i].rating > best.rating){
+//       best = teachers[i]
+//     }
+//   }
+// }
+// console.log(best);
+// output.innerHTML = `Best Maths teacher is: ${best.name} - ${best.rating}`
+
+
+const products = [
+  { name: "Laptop", price: 85000, stock: 12, category: "Electronics" },
+  { name: "Mobile", price: 55000, stock: 5, category: "Electronics" },
+  { name: "Shoes", price: 3000, stock: 40, category: "Fashion" },
+  { name: "Watch", price: 12000, stock: 20, category: "Fashion" },
+  { name: "Tablet", price: 45000, stock: 8, category: "Electronics" }
+];
+const output = document.querySelector("#output");
+
+let good = null;
+ 
+for(let i = 0 ; i < products.length ; i++){
+  if(products[i].category === "Electronics"){
+    if(good === null){
+      good = products[i]
+    } else if (products[i].stock > good.stock){
+      good = products[i]
     }
+  }
 }
-output.innerHTML = `Best IT Employee is: ${best.name} -- ${best.salary}`
+console.log(good);
+
+output.innerHTML = `Best Electronics Product is: ${good.name} - Stock: ${good.stock}  `

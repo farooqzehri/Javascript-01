@@ -1,0 +1,92 @@
+/* COLORS */
+:root {
+  --weak: #e74c3c;
+  --moderate: #f1c40f;
+  --strong: #2ecc71;
+  --bg: #f5f6fa;
+  --card: #ffffff;
+  --muted: #7f8c8d;
+  --radius: 12px;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--card);
+  padding: 25px;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin: 0 0 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #dce1e8;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+input[type="password"]:focus {
+  border-color: var(--strong);
+  box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.25);
+}
+
+.strength-bar {
+  width: 100%;
+  height: 10px;
+  background: #ecf0f1;
+  margin-top: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.strength-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--weak);
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.strength-text {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.req-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.req-list li {
+  padding: 6px 0;
+  color: var(--muted);
+  transition: 0.3s ease;
+}
+
+.req-list li.ok {
+  color: var(--strong);
+  font-weight: 600;
+}
