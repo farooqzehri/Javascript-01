@@ -1,4 +1,4 @@
-/* COLORS */
+/* COLORS
 :root {
   --weak: #e74c3c;
   --moderate: #f1c40f;
@@ -89,4 +89,4 @@ input[type="password"]:focus {
 .req-list li.ok {
   color: var(--strong);
   font-weight: 600;
-}
+} */

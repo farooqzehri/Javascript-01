@@ -204,39 +204,133 @@
 
 
 
-const country = document.getElementById("country");
-const city = document.getElementById("city");
 
-country.addEventListener("change", function () {
-  const selected = country.value;
+// 1. Dropdown Dynamic Update 
+// When a country is selected in one dropdown, dynamically populate a second dropdown 
+// with its cities. 
 
-  city.innerHTML = ""; // clear old cities
+// const country = document.getElementById("country");
+// const city = document.getElementById("city");
 
-  if (selected === "pakistan") {
-    city.innerHTML = `
-      <option value="">Select City</option>
-      <option>Karachi</option>
-      <option>Lahore</option>
-      <option>Islamabad</option>
-    `;
-  }
+// country.addEventListener("change", function () {
+//   const selected = country.value;
 
-  if (selected === "india") {
-    city.innerHTML = `
-      <option value="">Select City</option>
-      <option>Mumbai</option>
-      <option>Delhi</option>
-      <option>Bangalore</option>
-    `;
-  }
-});
+//   city.innerHTML = ""; // clear old cities
+
+//   if (selected === "pakistan") {
+//     city.innerHTML = `
+//       <option value="">Select City</option>
+//       <option>Karachi</option>
+//       <option>Lahore</option>
+//       <option>Islamabad</option>
+//     `;
+//   }
+
+//   if (selected === "india") {
+//     city.innerHTML = `
+//       <option value="">Select City</option>
+//       <option>Mumbai</option>
+//       <option>Delhi</option>
+//       <option>Bangalore</option>
+//     `;
+//   }
+// });
+
+// const country = document.getElementById("country");
+// const city = document.getElementById("city");
+
+// country.addEventListener("change" , () =>{
+//   const selected = country.value;
+
+//   if(selected === "pakistan"){
+//     city.innerHTML = `
+//     <option value=""> Select City </option>
+//     <option>Quetta</option>
+//     <option>Karachi</option>
+//     <option>khuzdar</option>
+//     `;
+//   }
+
+//   if(selected === "india"){
+//     city.innerHTML = `
+//     <option value=""> Select city </option>
+//     <option>Mumbai</option>
+//     <option>Delhi</option>
+//     <option>Rajistan</option>`
+//   }
+// })
 
 
+// const country = document.querySelector("#country");
+// const city = document.querySelector("#city")
+
+// country.addEventListener("change" , () =>{
+//   const selected = country.value;
+//    if(selected === "pakistan"){
+//     city.innerHTML = `
+//     <option value="">Select Country</option>
+//     <option>Karachi</option> 
+//     <option>Quetta</option> 
+//     <option>Gawader</option> `
+//     if(city === "Quetta"){
+//       const area = document.createElement("select")
+//       area.innerHTML = `
+//       <option>Select Area</option>
+//       <option>brewery</option>
+//       <option>Jinnah Town</option>
+//       <option>Fatima Jinnah</option>
+//       `
+//       document.body.appendChild(area)
+//     }
+//    }
+// })
+
+// const form = document.querySelector("#myForm");
+// const nameInput = document.querySelector("#name");
+// const emailInput = document.querySelector("#email");
+// const nameError = document.querySelector("#nameError");
+// const emailError = document.querySelector("#emailError");
+// const success = document.querySelector("#success");
+
+// form.addEventListener("submit", function(e){
+//     e.preventDefault();
+
+//     let valid = true;
+
+//     if(nameInput.value.trim() === ""){
+//         nameError.textContent = "Name required";
+//         valid = false;
+//     } else {
+//         nameError.textContent = "";
+//     }
+
+//     if(emailInput.value.indexOf("@") === -1){
+//         emailError.textContent = "Enter valid email";
+//         valid = false;
+//     } else {
+//         emailError.textContent = "";
+//     }
+
+//     if(valid){
+//         success.textContent = "Form submitted successfully!";
+//     } else {
+//         success.textContent = "";
+//     }
+// });
 
 
+const colorpicker = document.querySelector("#colorPicker")
+const colorpicker2 = document.querySelector("#colorPicker2")
+const preview = document.querySelector("#preview")
 
+colorpicker.addEventListener("input" , function (){
+  preview.style.backgroundColor = colorpicker.value
+  document.body.style.color = colorpicker.value
+})
+colorpicker2.addEventListener("input" , function (){
+  document.body.style.backgroundColor = colorpicker2.value
 
-
+})
 
 
 
