@@ -319,19 +319,30 @@
 // });
 
 
-const colorpicker = document.querySelector("#colorPicker")
-const colorpicker2 = document.querySelector("#colorPicker2")
-const preview = document.querySelector("#preview")
+// const colorpicker = document.querySelector("#colorPicker")
+// const colorpicker2 = document.querySelector("#colorPicker2")
+// const preview = document.querySelector("#preview")
 
-colorpicker.addEventListener("input" , function (){
-  preview.style.backgroundColor = colorpicker.value
-  document.body.style.color = colorpicker.value
-})
-colorpicker2.addEventListener("input" , function (){
-  document.body.style.backgroundColor = colorpicker2.value
+// colorpicker.addEventListener("input" , function (){
+//   preview.style.backgroundColor = colorpicker.value
+//   document.body.style.color = colorpicker.value
+// })
+// colorpicker2.addEventListener("input" , function (){
+//   document.body.style.backgroundColor = colorpicker2.value
 
-})
-
-
+// })
 
 
+
+
+const thumb = document.querySelector("#thumb");
+const bigImage = document.querySelector("#bigImage");
+
+thumb.addEventListener("mouseover", function(){
+    bigImage.src = thumb.src; 
+    bigImage.style.display = "block";
+});
+
+thumb.addEventListener("mouseout", function(){
+    bigImage.style.display = "none";
+});
