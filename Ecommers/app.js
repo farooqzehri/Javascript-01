@@ -225,36 +225,83 @@ const products = [
 ];
 
 
+
+// let category = []
+// products.map((item  , index )=> {
+//      if(category.indexOf(item.category) === -1){
+//         category.push(item.category)
+//      }
+// })
+// category.map((item , index) => {
+//     btn.innerHTML += `<button onclick="filterproducts(${index})">${item}</button>`
+// })
+
+
+
+// function renderproducts(arr){
+//        container.innerHTML = ""
+//     arr.map((item)=> {
+
+//         container.innerHTML += `<div class="card">
+//         <h2>${item.name}</h2>
+//         <P>Catogory: ${item.category}</p>
+//         <p>Price: $${item.price}</p></div>`
+//     })
+// }
+
+// renderproducts(products)
+
+
+// function filterproducts(index){
+//     const fileterproducts = products.filter(item => item.category === category[index])
+//     renderproducts(fileterproducts)
+// }
+
+
 const btn = document.querySelector(".btns")
 const container = document.querySelector(".container")
-
-let category = []
-products.map((item  , index )=> {
-     if(category.indexOf(item.category) === -1){
-        category.push(item.category)
-     }
+let catogory = [];
+products.map((item , index) => {
+    if(catogory.indexOf(item.category) === -1){
+        catogory.push(item.category)
+        
+    }
+    
 })
-category.map((item , index) => {
-    btn.innerHTML += `<button onclick="filterproducts(${index})">${item}</button>`
+catogory.map((item , index) => {
+    btn.innerHTML += `<button onclick="filtereditems(${index})">${item}</button>`
 })
-
 
 
 function renderproducts(arr){
-       container.innerHTML = ""
-    arr.map((item)=> {
-
+    container.innerHTML = ""
+    arr.map((item) => {
         container.innerHTML += `<div class="card">
         <h2>${item.name}</h2>
-        <P>Catogory: ${item.category}</p>
-        <p>Price: $${item.price}</p></div>`
+        <p>catogory: ${item.category}</p>
+        <p>Price: $${item.price}</P>
+        </div>`
     })
 }
 
 renderproducts(products)
+function filtereditems(index){
+    const filteritems = products.filter(item => item.category === catogory[index])
+
+renderproducts(filteritems)
+console.log("hello" , index);
 
 
-function filterproducts(index){
-    const fileterproducts = products.filter(item => item.category === category[index])
-    renderproducts(fileterproducts)
 }
+btn.addEventListener('click' , (event)=>{
+  btn.childNodes.forEach(item => {
+    item.className = ""
+  })
+  console.log(event.target);
+  if(event.target.tagName === "BUTTON"){
+    event.target.className = "active"
+
+  }
+  
+  
+})
