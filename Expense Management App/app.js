@@ -1,0 +1,5 @@
+const input = document.querySelector("#input")
+const select = document.querySelector("#select")
+const text = document.querySelector("#text")
+const submit = document.querySelector("#submit")
+const ul = document.querySelector()

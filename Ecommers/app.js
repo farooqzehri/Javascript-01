@@ -222,6 +222,7 @@ const products = [
     category: "Kitchen Appliances",
     brand: "Bosch",
   },
+ 
 ];
 
 
@@ -257,9 +258,9 @@ const products = [
 //     renderproducts(fileterproducts)
 // }
 
-
 const btn = document.querySelector(".btns")
 const container = document.querySelector(".container")
+const Home = document.querySelector("#home")
 let catogory = [];
 products.map((item, index) => {
   if (catogory.indexOf(item.category) === -1) {
@@ -290,6 +291,7 @@ function filtereditems(index) {
 
   renderproducts(filteritems)
   console.log("hello", index);
+  
 
 
 }
@@ -303,3 +305,13 @@ btn.addEventListener('click', (event) => {
 
   }
 })
+// Home.addEventListener("click" ,() =>  {
+// renderproducts(products)
+
+// })
+function home(){
+  document.body.getAttribute = "<button>click</button>"
+// renderproducts(products)
+
+}
+home()
