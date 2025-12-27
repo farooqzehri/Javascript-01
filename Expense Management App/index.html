@@ -2,24 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMA</title>
+    <title>Expense Manager</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Expense Management App</h1>
+
+<div class="container">
+    <h1>Expense Manager</h1>
+
     <input id="input" type="number" placeholder="Enter Amount">
-    <select name="select" id="select">
-        <option value="Food">Food</option>
-        <option value="Travel">Travel</option>
-        <option value="Loan">Loan</option>
-        <option value="Medical">Medical</option>
-        <option value="Shopping">Shopping</option>
-        <option value="Haircut">Haircut</option>
-        <option value="Other">Other</option>
-    </select><br>
-    <textarea name="text" id="text" cols="20" rows="5" placeholder="Remarks"></textarea>
-    <button id="submit">Submit</button>
+
+    <select id="select">
+        <option>select</option>
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Loan</option>
+        <option>Medical</option>
+        <option>Shopping</option>
+        <option>Haircut</option>
+        <option>Other</option>
+    </select>
+
+    <textarea id="text" placeholder="Remarks"></textarea>
+
+    <button onclick="additems()">Add Expense</button>
+
     <ul id="ul"></ul>
-    <script src="app.js"></script>
+
+    <div class="total">
+        Total Expense: <span id="totalAmount">Rs 0</span>
+    </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
