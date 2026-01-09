@@ -1,19 +1,19 @@
-const fruits = [
-  "Apple",
-  "Banana",
-  "Orange",
-  "Mango",
-  "Pineapple",
-  "Grapes",
-  "Strawberry",
-  "Watermelon",
-  "Papaya",
-  "Kiwi"
-];
+// const fruits = [
+//   "Apple",
+//   "Banana",
+//   "Orange",
+//   "Mango",
+//   "Pineapple",
+//   "Grapes",
+//   "Strawberry",
+//   "Watermelon",
+//   "Papaya",
+//   "Kiwi"
+// ];
 
 //                   ForEach
 
-const faro  = document.querySelector("#faro")
+// const faro  = document.querySelector("#faro")
 // fruits.forEach( (a , khas )=> {
 // console.log(a , khas  )
 // faro.innerHTML +=`<li> ${a} =! ${khas} </li>`
@@ -44,7 +44,7 @@ const faro  = document.querySelector("#faro")
 
 //         FILTER 
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // const filteritems = numbers.filter(item => {
 //     return item < 7 && item > 2 
@@ -97,5 +97,26 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const newpromise = new Promise((resolve , reject) =>  {
   let pizzaIsReady = true
+  if(pizzaIsReady){
+    console.log("all ok");
+  }else(console.log("we are sorry"))
 })
     
+
+
+
+const cHECKAGE = new Promise((resolve , reject) => {
+  let age = 19;
+  if(age <= 18){
+    console.log("You cant wote");
+  }else{console.log("Which Party Do you want to Vote.");
+}
+})
+.then(resolve => {
+  console.log("completed");
+  
+})
+.catch((reject) => {
+  console.error("We are busy :");
+  
+})
