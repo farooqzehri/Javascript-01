@@ -108,7 +108,7 @@ const newpromise = new Promise((resolve , reject) =>  {
 const cHECKAGE = new Promise((resolve , reject) => {
   let age = 19;
   if(age <= 18){
-    console.log("You cant wote");
+    console.log("You cant vote");
   }else{console.log("Which Party Do you want to Vote.");
 }
 })
