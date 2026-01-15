@@ -28,3 +28,47 @@ function edittodo(index){
     alltodo[index] = newvalue
     rendertodo()
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//             EXPENSE TRACKER
+
+const num = document.querySelector("#input1");
+const select = document.querySelector("#select")
+const cont = document.querySelector("#container")
+
+let allexpense = []
+
+select.innerHTML +=`<option ></option>
+    <option value="Food">Food</option>
+    <option value="travel">travel</option>
+    <option value="shopping">shopping</option>
+    <option value="other">other</option>
+    `
+
+function renderexpense(){
+    for(let i = 0 ; i < allexpense.length ; i++){
+    cont.innerHTML += `
+    
+    `
+}
+}
