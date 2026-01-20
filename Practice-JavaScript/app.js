@@ -68,11 +68,26 @@ function renderexpense(){
     <h1>Catogary: ${select.value}</h1>
     <h2>Expense: $${num.value}</h2>
     <h2>Discription: ${discr.value}</h2>
+    <h3>Date: ${allexpense[i].date}</h3>
     <button onclick="editeExpense(${i})">Edit</button>
     <button onclick="deleteExpense(${i})">Delete</button>
     </div>
     `
 }}
+
+function getFormattedDate() {
+    const date = new Date();
+    const day = date.getDate();
+    const year = date.getFullYear();
+
+    const months = [
+        "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+    ];
+
+    const month = months[date.getMonth()];
+    return `${day}-${month}-${year}`;
+}
 function addExpense(){
      
     const amount = num.value;
@@ -81,7 +96,8 @@ function addExpense(){
     const allobject = {
         amount,
         Catogary,
-        remarks
+        remarks,
+          date: getFormattedDate()
         
     };
     if(numbers === -1){
