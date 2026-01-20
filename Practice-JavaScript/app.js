@@ -56,8 +56,10 @@ const num = document.querySelector("#input1");
 const select = document.querySelector("#select")
 const cont = document.querySelector("#container")
 const discr = document.querySelector("#input2")
+const total = document.querySelector("#total")
 
 let allexpense = []
+let numbers = -1
 
 function renderexpense(){
     cont.innerHTML = ''
@@ -66,13 +68,49 @@ function renderexpense(){
     <h1>Catogary: ${select.value}</h1>
     <h2>Expense: $${num.value}</h2>
     <h2>Discription: ${discr.value}</h2>
-    <button>Edit</button>
-    <button>Delete</button>
+    <button onclick="editeExpense(${i})">Edit</button>
+    <button onclick="deleteExpense(${i})">Delete</button>
     </div>
     `
-}
-}
+}}
 function addExpense(){
-    allexpense.push(num.value)
+     
+    const amount = num.value;
+    const Catogary = select.value;
+    const remarks = discr.value;
+    const allobject = {
+        amount,
+        Catogary,
+        remarks
+        
+    };
+    if(numbers === -1){
+    allexpense.push(allobject)
+}else{
+        allexpense[numbers] = allobject;
+        numbers = -1;
+    }
     renderexpense()
+    allobject.value = ''
+    calculateTotal()
+}
+
+
+function deleteExpense(index){
+    allexpense.splice(index , 1)
+        renderexpense()
+}
+function editeExpense(index){
+    num.value = allexpense[index].amount
+    select.value = allexpense[index].Catogary
+    discr.value = allexpense[index].remarks
+    numbers = index
+    renderexpense()
+}
+function calculateTotal(){
+    let num = 0 ;
+    for(let i = 0 ; i < allexpense.length ; i++){
+        num += Number(allexpense[i].amount)
+        total.innerHTML = `Total is: $${num}`
+    }
 }
