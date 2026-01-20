@@ -62,10 +62,13 @@ let allexpense = []
 function renderexpense(){
     cont.innerHTML = ''
     for(let i = 0 ; i < allexpense.length ; i++){
-    cont.innerHTML += `<li>
+    cont.innerHTML += `<div id="card">
     <h1>Catogary: ${select.value}</h1>
     <h2>Expense: $${num.value}</h2>
-    <h2>Discription: ${discr.value}</h2></li>
+    <h2>Discription: ${discr.value}</h2>
+    <button>Edit</button>
+    <button>Delete</button>
+    </div>
     `
 }
 }

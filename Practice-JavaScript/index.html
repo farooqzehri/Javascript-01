@@ -9,7 +9,7 @@
     body{
         text-align: center;
     }
-    #container{
+    #card{
         border: 1px solid black;
         border-radius: 10px;
 }
@@ -23,13 +23,14 @@
      -->
     
 
-        <input type="number" name="input" id="input1">
-        <input type="text" name="input" id="input2">
-        <select name="select" id="select"><option ></option>
+        <input type="number" placeholder="Enter the Amount." name="input" id="input1">
+        <select name="select"  id="select"><option >none</option>
     <option value="Food">Food</option>
-    <option value="travel">travel</option>
-    <option value="shopping">shopping</option>
-    <option value="other">other</option></select>
+    <option value="travel">Travel</option>
+    <option value="shopping">Shopping</option>
+    <option value="other">Other</option></select><br>
+        <textarea placeholder="Enter the Discription" type="text" cols="20" rows="5" id="input2"></textarea>
+
         <button onclick="addExpense()">Add EXpense</button>
         <h1></h1>
     
