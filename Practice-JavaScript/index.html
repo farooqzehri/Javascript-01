@@ -5,20 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java</title>
 </head>
+<style>
+    body{
+        text-align: center;
+    }
+    #container{
+        border: 1px solid black;
+        border-radius: 10px;
+}
+</style>
 <body>
-    <h1>Hello ToDo!</h1>
+    <!-- <h1>Hello ToDo!</h1>
     <input type="text" placeholder="Enter Your Todo." id="input">
     <button id="btn" onclick="addtodo()">Add Todo</button>
 
     <div id="div"></div>
+     -->
     
-    
-    <form action="submit">
+
         <input type="number" name="input" id="input1">
-        <select name="select" id="select">Select</select>
-        <button>Add EXpense</button>
+        <input type="text" name="input" id="input2">
+        <select name="select" id="select"><option ></option>
+    <option value="Food">Food</option>
+    <option value="travel">travel</option>
+    <option value="shopping">shopping</option>
+    <option value="other">other</option></select>
+        <button onclick="addExpense()">Add EXpense</button>
         <h1></h1>
-    </form>
+    
     <div id="container"></div>
     <script src="app.js"></script>
 </body>
