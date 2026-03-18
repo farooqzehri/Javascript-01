@@ -1316,11 +1316,11 @@ console.log(good);
 
 output.innerHTML = `Best Electronics Product is: ${good.name} - Stock: ${good.stock}  `
 
-const users = {
-  name : prompt("enter Your Name."),
-  FName: prompt("enter Your Father Name."),
-  department : prompt("enter Your department."),
-  age : prompt("enter Your age."),
-  email : input.value
-}
-console.log(users.email);
+// const users = {
+//   name : prompt("enter Your Name."),
+//   FName: prompt("enter Your Father Name."),
+//   department : prompt("enter Your department."),
+//   age : prompt("enter Your age."),
+//   email : input.value
+// }
+// console.log(users.email);
