@@ -148,23 +148,25 @@
 //     total.innerHTML = `Total is: $${nums}`;
 // }
 
+// const div = document.querySelector("#container")
+// const userOrder = prompt("enter Your Ordr Please. (Menu: Biryani , Karahi , burger , Pizza , milakShack)").toLowerCase();
+
+// const promise = new Promise((resolve, reject) => {
+//     if(userOrder === "karahi" || userOrder === "biryani" || userOrder === "burger" || userOrder === "pizza" || userOrder === "milkshack"){
+//         resolve()
+//     }else(
+//         reject()
+//     )
+    
+// }).then(() => {
+//      div.innerHTML = "ORder Is On The Way..."
+
+//     // alert("Order is on the way...");
+    
+// }).catch(() =>{
+//      div.innerHTML = " We Are Sory , this item is Not availble"
+//     // alert("these are not availble");
+    
+// })
+
 const div = document.querySelector("#container")
-const userOrder = prompt("enter Your Ordr Please. (Menu: Biryani , Karahi , burger , Pizza , milakShack)").toLowerCase();
-
-const promise = new Promise((resolve, reject) => {
-    if(userOrder === "karahi" || userOrder === "biryani" || userOrder === "burger" || userOrder === "pizza" || userOrder === "milkshack"){
-        resolve()
-    }else(
-        reject()
-    )
-    
-}).then(() => {
-     div.innerHTML = "ORder Is On The Way..."
-
-    // alert("Order is on the way...");
-    
-}).catch(() =>{
-     div.innerHTML = " We Are Sory , this item is Not availble"
-    // alert("these are not availble");
-    
-})
