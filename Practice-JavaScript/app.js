@@ -179,8 +179,11 @@ const promise = new Promise((resolve, reject) => {
         reject()
     )
 }).then( () => {
-    alert("Completed... Your Order is on the way.")
+    // alert("Completed... Your Order is on the way.")
+    div.innerHTML = "Completed... Your Order is on the way."
+
 
 }).catch(() => {
-    alert("sorry Some thing is Wrong. X")
+    // alert("sorry Some thing is Wrong. X")
+    div.innerHTML = "sorry Some thing is Wrong. X"
 })
