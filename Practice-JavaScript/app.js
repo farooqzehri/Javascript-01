@@ -169,21 +169,93 @@
     
 // })
 
+// const div = document.querySelector("#container")
+// const customerOrder = prompt("Enter Your Order Please. (Availble: Hair Dresser, Nail Cliper, Navy Shirt, Blue Jeans)").toLowerCase();
+
+// const promise = new Promise((resolve, reject) => {
+//     if(customerOrder === "hair dresser" || customerOrder === "nail cliper" || customerOrder === "navy shirt" || customerOrder === "blue jeans"){
+//         resolve()
+//     }else(
+//         reject()
+//     )
+// }).then( () => {
+//     // alert("Completed... Your Order is on the way.")
+//     div.innerHTML = "Completed... Your Order is on the way."
+
+
+// }).catch(() => {
+//     // alert("sorry These are not availble. X")
+//     div.innerHTML = "sorry These are not availble. X"
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+ function getFormattedDate() {
+    const date = new Date();
+    const day = date.getDate();
+    const year = date.getFullYear();
+
+    const months = [
+        "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+    ];
+    const month = months[date.getMonth()];
+    return `${day}-${month}-${year}`;
+}
+
+
+
+
+//                   NEW EXPENSE SYSTEM
+
+const total = document.querySelector("#total");
+const amount = document.querySelector("#input1");
+const category = document.querySelector("#select");
+const desc = document.querySelector("#input2");
 const div = document.querySelector("#container")
-const customerOrder = prompt("Enter Your Order Please. (Availble: Hair Dresser, Nail Cliper, Navy Shirt, Blue Jeans)").toLowerCase();
 
-const promise = new Promise((resolve, reject) => {
-    if(customerOrder === "hair dresser" || customerOrder === "nail cliper" || customerOrder === "navy shirt" || customerOrder === "blue jeans"){
-        resolve()
-    }else(
-        reject()
-    )
-}).then( () => {
-    // alert("Completed... Your Order is on the way.")
-    div.innerHTML = "Completed... Your Order is on the way."
+let allExpense = [];
+let numbers = -1;
 
+function renderExpense(){
+div.innerHTML = '';
 
-}).catch(() => {
-    // alert("sorry Some thing is Wrong. X")
-    div.innerHTML = "sorry Some thing is Wrong. X"
-})
+for(let i = 0 ; i < allExpense.length ; i++){
+    div.innerHTML += `<div id='card'>
+    <h1>Category:</h1>
+    </div>`
+}
+}
+
+function addexpense(){
+    const amount = amount.value;
+    const catogery = category.value
+    const remarks = desc.value;
+
+    if(!amount || catogery === 'none' || !remarks){
+        alert('please fill all Fields!')
+        return;
+    }
+}
+const allobjects = {
+    amount,
+    category,
+    remarks,
+    date : getFormattedDate()
+}
+
+if(numbers === -1){
+    allExpense.push(allobjects)
+}else{
+    allExpense[numbers] = allobjects;
+    numbers = -1
+}
