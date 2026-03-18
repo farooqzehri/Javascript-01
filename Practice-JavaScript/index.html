@@ -30,22 +30,140 @@
 
 
 
-        <h1 id="total"></h1>
-        <input type="number" placeholder="Enter The Expense." id="input1">
-        <select name="select" id="select">
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEDGER / 01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
 
-            <option value="none">none</option>
+
+</head>
+<body>
+
+<div class="page">
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead-left">
+      <span class="issue-line">Issue 001 &nbsp;·&nbsp; Personal Finance</span>
+      <span class="pub-date" id="hdr-date"></span>
+    </div>
+    <div class="masthead-center">
+      <h1>LEDGER</h1>
+      <p class="subtitle">The Art of Knowing Where It Went</p>
+    </div>
+    <div class="masthead-right">
+      <div class="total-label">Running Total</div>
+      <div id="total">$0.00</div>
+    </div>
+  </header>
+
+  <div class="rule-row">Expenses &nbsp;·&nbsp; Categories &nbsp;·&nbsp; Records</div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- INPUT -->
+    <aside class="input-col">
+      <div class="col-heading">Entry</div>
+
+      <div class="edit-badge" id="edit-badge">
+        <span class="edit-badge-dot"></span>Editing record
+      </div>
+
+      <div class="field">
+        <label class="field-label">Amount</label>
+        <div class="amount-wrap">
+          <span class="sym">$</span>
+          <input type="number" id="input1" placeholder="0.00" min="0" step="0.01" autocomplete="off">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="field-label">Category</label>
+        <div class="select-wrap">
+          <select id="select">
+            <option value="none">— Select —</option>
             <option value="Food">Food</option>
             <option value="Petrol">Petrol</option>
             <option value="Medical">Medical</option>
-            <option value="Shoping">Shoping</option>
+            <option value="Shopping">Shopping</option>
             <option value="Other">Other</option>
-        </select><br>
-        <textarea placeholder="Enter The Description.." name="text" id="input2" cols="30" rows="10"></textarea>
+          </select>
+        </div>
+      </div>
 
-            <button>Add Expense</button>
-            <div id="container"></div>
-     
+      <div class="field">
+        <label class="field-label">Description</label>
+        <textarea id="input2" placeholder="What was this expenditure for…"></textarea>
+      </div>
+
+      <button class="btn-primary" id="btn-submit" onclick="addExpense()">
+        <span id="btn-label">Add Entry</span>
+      </button>
+      <button class="btn-cancel-edit" id="btn-cancel" onclick="cancelEdit()">✕ &nbsp;Cancel Edit</button>
+    </aside>
+
+    <div class="col-divider"></div>
+
+    <!-- LIST -->
+    <section class="list-col">
+      <div class="col-heading">Records</div>
+      <div class="list-meta">
+        <span class="list-count" id="list-count">0 entries</span>
+      </div>
+
+      <div class="empty-state" id="empty">
+        <div class="empty-num">∅</div>
+        <p>No records filed</p>
+      </div>
+
+      <div class="table-head" id="table-head" style="display:none">
+        <div class="th">Cat.</div>
+        <div class="th">Description</div>
+        <div class="th" style="text-align:right">Amount</div>
+        <div class="th" style="text-align:right">Actions</div>
+      </div>
+
+      <div id="container"></div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>Ledger v1.0</span>
+    <span>All data is local &nbsp;·&nbsp; No cloud &nbsp;·&nbsp; No tracking</span>
+    <span id="ftr-count">0 Records</span>
+  </footer>
+
+</div>
+
+<!-- MODAL -->
+<div class="overlay" id="overlay" onclick="handleOverlayClick(event)">
+  <div class="modal">
+    <div class="modal-header">
+      <div>
+        <div class="modal-header-title">CONFIRM DELETE</div>
+        <div class="modal-header-sub">This action cannot be undone</div>
+      </div>
+    </div>
+    <div class="modal-body">
+      <p id="modal-desc"></p>
+      <div class="modal-actions">
+        <button class="modal-btn keep"    onclick="closeModal()">Keep Record</button>
+        <button class="modal-btn confirm" onclick="confirmDelete()">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
     <script src="app.js"></script>
 </body>
 </html>
