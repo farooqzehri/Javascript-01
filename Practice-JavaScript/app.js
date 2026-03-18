@@ -172,3 +172,6 @@
 const div = document.querySelector("#container")
 const customerOrder = prompt("Enter Your Order Please. (Availble: Hair Dresser, Nail Cliper, Navy Shirt, Blue Jeans)")
 
+const promise = new Promise((resolve, reject) => {
+    
+})
