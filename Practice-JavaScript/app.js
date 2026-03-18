@@ -245,8 +245,7 @@ function addexpense(){
         alert('please fill all Fields!')
         return;
     }
-}
-const allobjects = {
+    const allobjects = {
     amount,
     category,
     remarks,
@@ -258,4 +257,20 @@ if(numbers === -1){
 }else{
     allExpense[numbers] = allobjects;
     numbers = -1
+}
+
+amount.value = '';
+category.value = 'none';
+desc.value = '';
+renderExpense();
+calculateTotal()
+}
+
+
+function calculateTotal(){
+    let nums = 0;
+    for(let i = 0 ; i < allExpense.length; i++){
+        nums += Number(allExpense[i].amount);
+    }
+    total.innerHTML = `The Total is: $${nums} `
 }
