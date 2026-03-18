@@ -170,8 +170,17 @@
 // })
 
 const div = document.querySelector("#container")
-const customerOrder = prompt("Enter Your Order Please. (Availble: Hair Dresser, Nail Cliper, Navy Shirt, Blue Jeans)")
+const customerOrder = prompt("Enter Your Order Please. (Availble: Hair Dresser, Nail Cliper, Navy Shirt, Blue Jeans)").toLowerCase();
 
 const promise = new Promise((resolve, reject) => {
-    
+    if(customerOrder === "hair dresser" || customerOrder === "nail cliper" || customerOrder === "navy shirt" || customerOrder === "blue jeans"){
+        resolve()
+    }else(
+        reject()
+    )
+}).then( () => {
+    alert("Completed... Your Order is on the way.")
+
+}).catch(() => {
+    alert("sorry Some thing is Wrong. X")
 })
