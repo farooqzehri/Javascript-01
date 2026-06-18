@@ -1328,6 +1328,8 @@ output.innerHTML = `Best Electronics Product is: ${good.name} - Stock: ${good.st
 const users = [
   {
     id : 1, name: "Ali", 
-    email: "ali@example.com"
+    email: "ali@example.com",
+    password: 'password213'
+
   }
 ]
