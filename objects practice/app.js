@@ -1329,7 +1329,7 @@ const users = [
   {
     id : 1, name: "Ali", 
     email: "ali@example.com",
-    password: 'password213'
-
+    password: 'password213',
+    image: "https://randomuser.me/api/portraits/men/1.jpg"
   }
 ]
