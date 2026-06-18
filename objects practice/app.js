@@ -1324,3 +1324,10 @@ output.innerHTML = `Best Electronics Product is: ${good.name} - Stock: ${good.st
 //   email : input.value
 // }
 // console.log(users.email);
+
+const users = [
+  {
+    id : 1, name: ali , 
+    
+  }
+]
