@@ -1331,6 +1331,6 @@ const users = [
     email: "ali@example.com",
     password: 'password213',
     image: "https://randomuser.me/api/portraits/men/1.jpg",
-    
+    address: 'quetta balochistan,'
   }
 ]
